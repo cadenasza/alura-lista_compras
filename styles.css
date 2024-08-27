@@ -1,0 +1,155 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root{
+    --cor-primaria: #f55b64;
+    --cor-secundaria: #c2373f;
+    --neutro: #f9f9f9;
+    --preto: #131730;
+    --fonte-titulo: "Krona One", sans-serif;
+    --fonte-texto: 'Numans', sans-serif;
+    --degrade-azul: linear-gradient(180deg, #000 0%,#26327F 100%);
+}
+
+body {
+    background: var(--degrade-azul);
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+main {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    width:51vw;
+    align-items: center;
+    background-color: var(--neutro);
+    padding: 4.3rem;
+    border-radius: 16px;
+}
+
+h2 {
+    font-family: var(--fonte-titulo);
+    color: var(--cor-primaria);
+    font-weight: 700;
+    font-size: 1.3rem;
+    line-height: 33px;
+    text-align: center;
+}
+
+hr{
+    border: none;
+    border-bottom: 3px dotted var(--cor-primaria);
+    margin-bottom:1.6rem ;
+    width: 40vw;
+}
+
+p {
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+#input-item {
+    padding:0.8rem 1rem;
+    display: block;
+    border-radius: 24px;
+    border: 1px solid var(--preto);
+    width: 35vw;
+}
+
+#input-item::placeholder{
+    font-family: "Montserrat", sans-serif;
+    font-size: 1rem;
+    line-height: 19px;
+    
+}
+
+#adicionar-botao {
+    text-align: center;
+    padding:0.8rem 1rem;
+    border-radius: 24px;
+    background-color: var(--cor-primaria);
+    color: var(--neutro);
+    font-family: var(--fonte-texto);
+    font-size: 1.1rem;
+    line-height: 24px;
+    border: none;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+ul {
+    list-style: none;
+    width: 100%;
+}
+
+.item-lista-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container-nome-compra {
+    display: flex;
+}
+
+.item-lista-texto {
+    font-size: 0.9rem;
+    line-height: 20px;
+}
+
+.checkbox-input {
+    display: none;
+}
+
+.checkbox-costumizado {
+    width: 20px;
+    height: 20px;
+    background-color: var(--neutro);
+    border: 1px solid var(--preto);
+    cursor: pointer;
+    border-radius: 4px;
+    margin-right: 8px;
+}
+
+.checkbox-costumizado.checked {
+    background-color: var(--preto);
+    position: relative;
+}
+
+.checkbox-costumizado.checked::after {
+    content: "";
+    position: absolute;
+    left:30% ;
+    top: -10%;
+    width: 5px;
+    height: 14px;
+    border-top: 2px solid var(--neutro);
+    border-left: 2px solid var(--neutro);
+    transform: rotate(-140deg);
+}
+
+.checkbox-container{
+    display: inline;
+}
+
+.botao-acao {
+    background-color: transparent;
+    border: none;
+    padding: 5px;
+}
