@@ -17,7 +17,7 @@
 body {
     background: var(--degrade-azul);
     background-repeat: no-repeat;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -47,7 +47,7 @@ h2 {
 hr{
     border: none;
     border-bottom: 3px dotted var(--cor-primaria);
-    margin-bottom:1.6rem ;
+    margin-bottom:1rem ;
     width: 40vw;
 }
 
